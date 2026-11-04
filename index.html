@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="camystudy — resumos visuais, simulados e acompanhamento do seu aprendizado.">
+  <meta name="theme-color" content="#fbfaf7">
+  <title>camystudy — seu espaço de estudos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand" id="brandHome" aria-label="Voltar ao painel inicial">
+        <svg class="brand-mark" viewBox="0 0 40 40" role="img" aria-label="Livro aberto">
+          <path d="M20 31c-4-4-9-5-14-4V9c6-1 11 1 14 5 3-4 8-6 14-5v18c-5-1-10 0-14 4Z" />
+          <path d="M20 14v17M9 14c3 0 6 1 8 3m14-3c-3 0-6 1-8 3" />
+        </svg>
+        <span class="brand-name">camystudy</span>
+      </button>
+      <div class="topbar-meta">
+        <span class="status-pill"><i></i> Pronto para a web</span>
+        <button class="icon-button theme-toggle" id="themeToggle" type="button" aria-label="Ativar modo escuro" title="Ativar modo escuro" aria-pressed="false">
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.1A8.3 8.3 0 0 1 8.9 3.8 8.5 8.5 0 1 0 20.2 15.1Z"/></svg>
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+        </button>
+        <button class="icon-button" id="resetData" title="Apagar dados locais" aria-label="Apagar dados locais">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6m4-6v6M6 7l1 14h10l1-14M9 7V4h6v3"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="app" class="main-content" aria-live="polite"></main>
+
+    <footer class="footer"><span class="footer-brand"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 31c-4-4-9-5-14-4V9c6-1 11 1 14 5 3-4 8-6 14-5v18c-5-1-10 0-14 4Z"/><path d="M20 14v17M9 14c3 0 6 1 8 3m14-3c-3 0-6 1-8 3"/></svg><strong>camystudy</strong><span>Estude com intenção.</span></span><span id="lastSaved">Dados salvos neste dispositivo</span></footer>
+  </div>
+  <script src="questions.js"></script>
+  <script src="questions-aula7.js"></script>
+  <script src="summary.js"></script>
+  <script src="summary-aula7.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
